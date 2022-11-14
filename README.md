@@ -4,4 +4,4 @@ STUDY
 
 --x 2022/11/14 x--
 
-Beginning of the study in JavaScript. Udemy course "Introduction to JavaScript". 
+Beginning of the study in JavaScript. Udemy course "Introdução ao JavaScript". 
