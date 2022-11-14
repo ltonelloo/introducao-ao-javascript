@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='UTF-8'>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Excercise 7</title>
+</head>
+<body>
+    <script>
+        //Exemplo de função que utiliza dados de objetos para estabelecer condicionais.
+        let objectServer = {
+            acess: true,
+            login: "mundojs",
+        };
+
+        let objectServer2 = {
+            error: "Erro ao concectar ao servidor.",
+        };
+
+        function connectionLogin(serverAnswer){
+            if(serverAnswer.error == null){
+                if(serverAnswer.acess){
+                    console.log(`Login: ${objectServer.login}`);
+                }else{
+                    console.log('Acesso negado.');
+                }
+            }else{
+                console.log(serverAnswer.error);
+            }
+        }
+
+    </script>
+</body>
+</html>

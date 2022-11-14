@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='UTF-8'>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Excercise 16</title>
+</head>
+<body>
+    <script>
+
+    function testeFinal(string, number)
+    {
+        let sum = [];
+        let booleano = 0;
+
+        if(string == 'mundojs')
+        {
+            console.log('MundoJS');
+            return number;
+        }
+
+        if(string == 'soma')
+        {
+            return ((number/2)+(number*number));
+        }
+        
+        if(string == 'vetor')
+        {
+            for(let i = 0; i < 5; i++)
+            {
+                sum[i] = (number + (2 * i));
+            }
+            return sum;
+        }
+
+        if(string == 'booleano')
+        {
+            for(let i = 0; i < 5; i++)
+            {
+                sum[i] = (number + (2 * i));
+            }
+            
+            for(let i = 0;i < sum.length; i++)
+            {
+                booleano = (sum[i] + booleano);
+            }
+            
+            if(booleano > 35)
+            {
+                return true;
+            }
+            else
+            {
+                return false;
+            }
+
+        }
+
+        else
+        {
+            return -1;
+        }
+
+    }   
+    </script>
+</body>
+</html>

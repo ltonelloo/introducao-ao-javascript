@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='UTF-8'>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Excercise 13</title>
+</head>
+<body>
+    <script>
+        fibonacciTxt = 'Na matemática, a sucessão de Fibonacci, é uma sequência de números inteiros, começando normalmente por 0 e 1, na qual cada termo subsequente corresponde à soma dos dois anteriores.';
+        console.log(fibonacciTxt);
+        document.write(fibonacciTxt + '<br/');
+        
+        prompt
+        firstNumber = 0; 
+        secondNumber = 1;
+
+        //Calcula a sequência de fibonacci com o laço de repetição "for".
+        for(thirdNumber = firstNumber + secondNumber;;){
+            console.log('Fibonacci: ' + firstNumber + '\n' + 'Fibonacci: ' + secondNumber + '\n' + 'Fibonacci: ' + thirdNumber);
+            document.write('Fibonacci: ' + firstNumber + '<br/>' + 'Fibonacci: ' + secondNumber + '<br/>' + 'Fibonacci: ' + thirdNumber + '<br/>')
+            firstNumber = thirdNumber + secondNumber;
+            secondNumber = firstNumber + thirdNumber;
+            thirdNumber = secondNumber + firstNumber;
+
+            if(thirdNumber >= 100000){
+            break;
+            }
+        }
+    </script>
+</body>
+</html>

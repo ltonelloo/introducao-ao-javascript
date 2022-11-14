@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='UTF-8'>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Excercise 15</title>
+</head>
+<body>
+    <script>
+        
+    //Função que soma os vetores de dentro de um vetor com "for".
+
+    function sumSubArray(array)
+    {
+        let result = [];
+
+        for(let indice = 0; indice < array.length; indice++)
+        {
+            let subArray = array[indice];
+            let sum = 0;
+
+            for(let subIndice = 0; subIndice < subArray.length; subIndice++)
+            {
+                sum = sum + subArray[subIndice];
+            }
+
+            result[indice] = sum;
+        } 
+        
+        return result;
+    }   
+    </script>
+</body>
+</html>

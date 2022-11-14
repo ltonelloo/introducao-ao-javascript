@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='UTF-8'>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Excercise 6</title>
+</head>
+    
+<body>
+<h1>Currency</h1>
+<script>
+    //Exemplo de função que utiliza "switch", "if" e "else if".
+    let symbol1 = "R$";
+    let symbol2 = "US$";
+    let symbol3 = "€";
+    let symbol4 = "¥";
+    let symbol5 = "P";
+    let message = document.querySelector("h1");
+
+    function currency (coin){
+        switch (coin){
+            case symbol1:
+                console.log("Brazilian Money - Real - R$");
+                alert(symbol1);
+                message.innerText = symbol1; 
+                break;
+            case symbol2:
+                console.log("USA Money - Dollar - US$");
+                alert(symbol2);
+                message.innerText = symbol2; 
+                break;
+            case symbol3:
+                console.log("European Money - Euro - €");
+                alert(symbol3);
+                message.innerText = symbol3; 
+                break;
+            case symbol4:
+                console.log("Japanese or Chinese Money - Iene or Renminbi - ¥");
+                alert(symbol4);
+                message.innerText = symbol4; 
+                break;
+            case symbol5:
+                console.log("Russian Money - Rublo - P");
+                alert(symbol5);
+                message.innerText = symbol5; 
+                break;
+            default:
+                console.log("Not Found");
+                break;
+            
+        }
+    }
+
+    function currency2 (coin){
+        if (coin == "R$"){
+            console.log("Brazilian Money - Real - R$");
+            alert(symbol1);
+            message.innerText = symbol1;
+        } else if (coin == "US$"){
+            console.log("USA Money - Dollar - US$");
+            alert(symbol2);
+            message.innerText = symbol2;
+        } else if (coin == "€"){
+            console.log("European Money - Euro - €");
+            alert(symbol3);
+            message.innerText = symbol3;
+        } else if (coin == "¥"){
+            console.log("Japanese or Chinese Money - Iene or Renminbi - ¥");
+            alert(symbol4);
+            message.innerText = symbol4;
+        } else if (coin == "P"){
+            console.log("Russian Money - Rublo - P");
+            alert(symbol5);
+            message.innerText = symbol5;
+        } else {
+            console.log("Not Found");
+        }
+        
+    }
+    </script>
+</body>
+</html>

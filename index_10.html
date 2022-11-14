@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='UTF-8'>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Excercise 10</title>
+</head>
+<body>
+    <script>
+        //Exemplos de aplicação do laço de repetição for.
+        for(let a = 1;a <= 10; a++){
+            console.log(a);
+            document.write(a + "<br/>");
+        }
+
+        let c = 10;
+        for(;c <= 20; c++){
+            console.log(c);
+            document.write(c + "<br/>");
+        }
+
+        let d = 20;
+        for(;d <= 30;){
+            console.log(d);
+            document.write(d + "<br/>");
+            d = d + 1;
+        }
+
+        let e = 30;
+        let f = 0;
+        for(;;){
+            console.log(e);
+            document.write(e + "<br/>");
+            e = e + 1;
+            f = e;
+            if(f > 40){
+                break;
+            }
+        }
+
+        let list = ["dog", "cat", "chicken"];
+        for(let b = 0; b < list.length; b++){
+            console.log(list[b]);
+            document.write(list[b] + "<br/>");
+        }
+
+        let dias = ["segunda", "terça", "quarta", "quinta", "sexta"];
+        for(let dia of dias){
+            console.log(dia);
+            document.write(dia + "<br/>");
+        }
+
+        for(let numero of [0,1,2,3,4,5,6,7,8,9]){
+            console.log(numero);
+            document.write(numero + "<br/>");
+        }
+
+        for(let numeroContinue of [0,1,2,3,4,5,6,7,8,9]){
+            if(numeroContinue == 5 || numeroContinue == 8){
+                continue;
+            }
+            console.log("valor continue: " + numeroContinue);
+            document.write("valor continue: " + numeroContinue + "<br/>");
+        }
+    </script>
+</body>
+</html>
